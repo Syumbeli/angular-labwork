@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="book__card" *ngFor="let book of books">
+    <div class="book__card_content">
+      <div>
+        <img class="book__card__photo" src="{{book.image}}" alt=""/>
+      </div>
+      <br>
+      <div>
+        <span>{{book.name}}</span>
+      </div>
+      <br>
+      <div>
+        <span>Автор: {{book.authorFullName}} </span>
+      </div>
+      <br>
+      <div>
+        <button (click)="navigateToBook(book)" style="margin-top: 10px; margin-left: 0" class="button">Посмотреть</button>
+      </div>
+    </div>
+  </div>
+</div>

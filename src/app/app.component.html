@@ -1,0 +1,15 @@
+<div class="main">
+  <app-header></app-header>
+  <div class="main__wrapper">
+    <div *ngIf="router.url == '/'">
+    <div class="main__wrapper__content">
+      <h1>Bookshop</h1>
+    </div>
+    <div class="main__wrapper__photo">
+      <img src="assets/books.png" style="width: 700px; height: 350px; margin-bottom: 20px" alt="">
+    </div>
+    <button style="margin: 0" routerLink="/books" class="button">Посмотреть список книг</button>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div>
+  <span>{{book.name}}</span>
+</div>
+<br>
+<div>
+  <img class="content__image" src="{{book.image}}"  alt=""/>
+</div>
+<br>
+<div>
+  <span>Жанр: {{book.genre}}</span>
+  <br>
+  <span>Автор: {{book.authorFullName}}</span>
+  <br>
+  <span>Описание: {{book.description}}</span>
+  <br>
+</div>
+<br>
+<button routerLink="{{'/item/'+book.id+'/edit'}}" style="margin-left: 0" class="button" role="button">Редактировать</button>
+<router-outlet></router-outlet>
